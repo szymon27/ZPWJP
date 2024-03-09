@@ -1,4 +1,4 @@
-def fun(a: list, b: list):
+def fun(a: list, b: list) -> list:
     ret = list(set(a + b))
     for i in range(len(ret)):
         ret[i] = ret[i] ** 3

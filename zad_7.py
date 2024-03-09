@@ -44,7 +44,7 @@ class Brawery:
 if __name__ == '__main__':
     response = requests.get("https://api.openbrewerydb.org/v1/breweries?page=1&per_page=20")
     braweries = json.loads(response.content)
-    print(len(braweries))
+
     for i in range(len(braweries)):
         temp = braweries[i]
         braweries[i] = Brawery(**temp)
