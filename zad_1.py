@@ -6,7 +6,6 @@ class Student:
     def is_passed(self) -> bool:
         return sum(self.marks) / len(self.marks) > 50
 
-        
 
 if __name__ == '__main__':
     student1 = Student("Szymon", [50, 60, 40])
