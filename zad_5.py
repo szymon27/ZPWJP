@@ -5,5 +5,6 @@ def fun(a: list, b: int) -> bool:
             found = True
     return found
 
+
 if __name__ == '__main__':
-    print(fun([1,2,3,4,5], 5))
+    print(fun([1, 2, 3, 4, 5], 5))

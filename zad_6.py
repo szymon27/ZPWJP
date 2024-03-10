@@ -4,5 +4,6 @@ def fun(a: list, b: list) -> list:
         ret[i] = ret[i] ** 3
     return ret
 
+
 if __name__ == '__main__':
-    print(fun([1,2,3,4], [4,4,4]))
+    print(fun([1, 2, 3, 4], [4, 4, 4]))

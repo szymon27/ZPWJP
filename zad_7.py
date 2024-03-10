@@ -1,9 +1,13 @@
 import requests
 import json
 
-class Brawery:
 
-    def __init__(self,  id: str, name: str, brewery_type: str, address_1: str, address_2: str, address_3: str, city: str, state_province: str, postal_code: str, country: str, longitude: str, latitude: str, phone: str, website_url: str,state: str, street: str):
+class Brawery:
+    def __init__(self, id: str, name: str, brewery_type: str, address_1: str,
+                 address_2: str, address_3: str, city: str,
+                 state_province: str, postal_code: str, country: str,
+                 longitude: str, latitude: str, phone: str, website_url: str,
+                 state: str, street: str):
         self.id = id
         self.name = name
         self.brewery_type = brewery_type
@@ -41,8 +45,10 @@ class Brawery:
     def __str__(self):
         return f'{self.id} {self.name} {self.brewery_type}'
 
+
 if __name__ == '__main__':
-    response = requests.get("https://api.openbrewerydb.org/v1/breweries?page=1&per_page=20")
+    url = "https://api.openbrewerydb.org/v1/breweries?page=1&per_page=20"
+    response = requests.get(url)
     braweries = json.loads(response.content)
 
     for i in range(len(braweries)):
