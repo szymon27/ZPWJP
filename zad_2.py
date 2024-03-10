@@ -2,7 +2,6 @@ def a(names):
     for name in names:
         print(name)
 
-
 def bv1(arr):
     for i in range(len(arr)):
         arr[i] = arr[i] * 2
