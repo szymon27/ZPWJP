@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.7
-      - name: Run a multi-line script
+      - name: install and run pycodestyle
         run: |
           pip install pycodestyle
           pycodestyle .
