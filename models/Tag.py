@@ -5,9 +5,10 @@ class Tag:
         self.tag = tag
         self.timestamp = timestamp
 
+
 def load_tags_from_file(file_path: str, separator: str = ",") -> list:
     tags = []
-    with open(file_path, 'r', encoding = 'utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
             tag_properties = line.strip().split(separator)
             user_id = tag_properties[0]

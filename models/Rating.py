@@ -5,9 +5,10 @@ class Rating:
         self.rating = rating
         self.timestamp = timestamp
 
+
 def load_ratings_from_file(file_path: str, separator: str = ",") -> list:
     ratings = []
-    with open(file_path, 'r', encoding = 'utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
             rating_properties = line.strip().split(separator)
             user_id = rating_properties[0]

@@ -4,9 +4,10 @@ class Movie:
         self.title = title
         self.genres = genres
 
+
 def load_movies_from_file(file_path: str, separator: str = ",") -> list:
     movies = []
-    with open(file_path, 'r', encoding = 'utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
             movie_properties = line.strip().split(separator)
             id = movie_properties[0]

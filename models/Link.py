@@ -4,9 +4,10 @@ class Link:
         self.imdb_id = imdb_id
         self.tmdb_id = tmdb_id
 
+
 def load_links_from_file(file_path: str, separator: str = ",") -> list:
     links = []
-    with open(file_path, 'r', encoding = 'utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
             link_properties = line.strip().split(separator)
             movie_id = link_properties[0]
