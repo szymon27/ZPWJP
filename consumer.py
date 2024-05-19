@@ -41,7 +41,7 @@ def process_message(index):
     print(f'start processing msg {id}')
 
     print(f'waiting...')
-    time.sleep(3)
+    time.sleep(30)
 
     with open(filename, 'r') as file:
         lines = file.readlines()
